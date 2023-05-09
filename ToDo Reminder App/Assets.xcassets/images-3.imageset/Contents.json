@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "todolistapp-2x1-0757.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "todolistapp-2x1-0757@2x.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "todolistapp-2x1-0757@3x.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
