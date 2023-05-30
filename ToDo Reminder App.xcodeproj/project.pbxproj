@@ -68,21 +68,45 @@
 		7554B1622A0ADA1500D22E99 /* ToDo Reminder App */ = {
 			isa = PBXGroup;
 			children = (
-				969963E62A0CABDF0045D675 /* Assets.xcassets */,
+				96E4FE552A14CE9600FF43C8 /* Controller */,
+				96E4FE542A14CE8D00FF43C8 /* View */,
+				96E4FE532A14CE8400FF43C8 /* Model */,
 				7554B1632A0ADA1500D22E99 /* AppDelegate.swift */,
 				7554B1652A0ADA1500D22E99 /* SceneDelegate.swift */,
-				7554B1672A0ADA1500D22E99 /* ViewController.swift */,
-				7554B1692A0ADA1500D22E99 /* Main.storyboard */,
-				7554B1712A0ADA1700D22E99 /* LaunchScreen.storyboard */,
 				7554B1742A0ADA1700D22E99 /* Info.plist */,
-				7554B16C2A0ADA1500D22E99 /* ToDo_Reminder_App.xcdatamodeld */,
-				7554B17C2A0ADF0800D22E99 /* AddVCViewController.swift */,
-				969963E22A0C9C5E0045D675 /* TaskTableViewCell.swift */,
-				969963EC2A0CB13A0045D675 /* FirstViewController.swift */,
-				969963EE2A0CBB060045D675 /* ToDoTask.swift */,
-				962D78382A0E1BCA003D4761 /* Notificationutil.swift */,
 			);
 			path = "ToDo Reminder App";
+			sourceTree = "<group>";
+		};
+		96E4FE532A14CE8400FF43C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				969963EE2A0CBB060045D675 /* ToDoTask.swift */,
+				7554B16C2A0ADA1500D22E99 /* ToDo_Reminder_App.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		96E4FE542A14CE8D00FF43C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7554B1692A0ADA1500D22E99 /* Main.storyboard */,
+				7554B1712A0ADA1700D22E99 /* LaunchScreen.storyboard */,
+				969963E62A0CABDF0045D675 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96E4FE552A14CE9600FF43C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				969963E22A0C9C5E0045D675 /* TaskTableViewCell.swift */,
+				969963EC2A0CB13A0045D675 /* FirstViewController.swift */,
+				7554B17C2A0ADF0800D22E99 /* AddVCViewController.swift */,
+				7554B1672A0ADA1500D22E99 /* ViewController.swift */,
+				962D78382A0E1BCA003D4761 /* Notificationutil.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

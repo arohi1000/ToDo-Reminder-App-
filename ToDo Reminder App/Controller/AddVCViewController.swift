@@ -17,7 +17,7 @@ class AddVCViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet var bodyField: UITextField!
     @IBOutlet var datePicker: UIDatePicker!
     
-   public var completion: ((String, String, Date, String) -> Void)?
+  
     let options = ["Low", "Medium", "High"]
     
     override func viewDidLoad() {
@@ -26,8 +26,6 @@ class AddVCViewController: UIViewController, UITextFieldDelegate{
         pickerView.delegate = self
         pickerView.dataSource = self
         
-        titleField.delegate = self
-        bodyField.delegate = self
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(didTapSaveButton))
       
     }
@@ -38,7 +36,7 @@ class AddVCViewController: UIViewController, UITextFieldDelegate{
             let priorityIndex = pickerView.selectedRow(inComponent: 0)
             let priority = options[priorityIndex]
             let targetDate = datePicker.date
-            completion?(titleText, bodyText, targetDate, priority)
+           
             
         ToDoTask.instance.addTask(title: titleText, body: bodyText, priority: priority, date: targetDate)
         scheduleLocalNotification(title: titleText, body: bodyText, date: targetDate)

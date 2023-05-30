@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     var isAuthorized = false
     var todoList : [ToDoList] = []
     
-   // var models = [MyReminder]()
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         checkNotificationPermission()
@@ -87,19 +87,18 @@ extension ViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TaskTableViewCell
-        //cell.textLabel?.text = models[indexPath.row].title
+        
         let task = todoList[indexPath.row]
         cell.titleL.text = task.title
         cell.bodyL.text = task.body
         
         
-        //let date = models[indexPath.row].date
+        
         
         
         cell.dateL.text = task.date?.formatted()
         cell.priorityL.text = task.priority
         
-        //cell.detailTextLabel?.text = formatter.string(from: date)
         
         return cell
     }
